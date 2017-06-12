@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<!--<canvas id='cv'></canvas>-->
+<div id ='cv'></div>
+
+<!--引入全局对象Fly-->
+<script src = './js/fly.js'></script>
+<!--引入小鸟对象-->
+<script src = './js/bird.js'></script>
+<!--引入天空对象-->
+<script src = './js/sky.js'></script>
+<!--引入陆地对象-->
+<script src = './js/land.js'></script>
+<!--引入管道对象-->
+<script src = './js/pipe.js'></script>
+<!--引入游戏对象-->
+<script src = './js/game.js'></script>
+<script>
+  /*var cv = document.getElementById('cv');
+  cv.width = 800;
+  cv.height = 600;
+  cv.style.border = '1px solid #f92';
+
+  var ctx = cv.getContext('2d');
+
+  var isStart = true;
+
+  var x0 = cv.width / 2,
+      y0 = cv.height / 2,
+      index = 0;
+
+var game = new Fly.Game({
+  ctx:ctx
+});
+  game.start();*/
+
+  var game = new Fly.Game({
+    id:'cv'
+    });
+
+    game.start();
+
+  //图片的文件名称(路径)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*Fly.raf(function () {
+
+      ctx.save();
+      //清除画布
+      ctx.clearRect(0, 0, cv.width, cv.height);
+      curTime = new Date();
+
+      delta = curTime - lastTime;
+      lastTime = curTime;
+
+//绘制天空
+      skyX -=skySpeed*delta;
+      skyX1 -=skySpeed*delta;
+      if(skyX < -imgList.sky.width){
+        skyX += imgList.sky.width*2
+      }
+      if(skyX1 <= -imgList.sky.width){
+        skyX1 += imgList.sky.width*2
+      }
+
+      ctx.drawImage(skyImg,skyX,skyY);
+      ctx.drawImage(skyImg,skyX1,skyY1);
+
+
+
+
+//绘制小鸟
+
+      speed = speed + a * delta;
+      //设置角度
+      curAngle = speed / maxSpeed * maxAngle;
+
+      //计算小鸟的位置
+      y += speed * delta + 1 / 2 * a * delta * delta;
+      //console.log(speed);
+
+      //平移圆点,设置小鸟旋转角度
+      ctx.translate(x,y);
+
+      //判断小鸟旋转的角度,
+      if(speed > maxSpeed){
+        curAngle = maxAngle;
+      }else if(speed < -maxSpeed) {
+        curAngle = -maxAngle;
+      }
+
+      //设置小鸟的旋转角度
+      ctx.rotate(Fly.toRadian(curAngle));
+
+      ctx.drawImage(birdImg, imgW * index++, 0, imgW, imgH, -imgW/2, -imgH/2, imgW, imgH);
+
+
+
+      if (index >= 3) {
+        index = 0;
+      }
+
+      ctx.restore();
+
+    }, 20);*/
+
+
+//    cv.addEventListener('click',function(){
+//      speed = -0.3;
+//    });
+//
+//
+//  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
